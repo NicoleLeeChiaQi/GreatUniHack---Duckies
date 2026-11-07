@@ -1,6 +1,6 @@
-# PassPotty — Student Rotating Savings Committees
+# PassPot — Student Rotating Savings Committees
 
-PassPotty is a student-focused platform prototype for organizing rotating savings committees (ROSCA). Members contribute an agreed amount on a schedule, and each cycle one member receives the pooled contribution. The prototype demonstrates committee discovery/matching, private committee creation, invite codes and links, turn swaps, trust and risk concepts, and an n8n event-orchestration interface.
+PassPot is a student-focused platform prototype for organizing rotating savings committees (ROSCA). Members contribute an agreed amount on a schedule, and each cycle one member receives the pooled contribution. The prototype demonstrates committee discovery/matching, private committee creation, invite codes and links, turn swaps, trust and risk concepts, and an n8n event-orchestration interface.
 
 ## Run the demo
 
@@ -19,7 +19,7 @@ The browser sends JSON POST events to the configured webhook. WhatsApp invitatio
 - `data.committee_name`
 - `data.invitation_url`
 - `data.invitees`: array of `{ phone, channel, recipient_opt_in_confirmed }`
-- `data.message_template`: `passpotty_committee_invitation`
+- `data.message_template`: `passpot_committee_invitation`
 - `data.action`: `send_whatsapp_template_messages`
 
 The webhook event is an orchestration request. Actual WhatsApp delivery requires a configured WhatsApp Business Cloud API or Twilio account, credentials in n8n, an approved WhatsApp message template, and recipient opt-in. The prototype does not itself send WhatsApp messages or verify provider delivery receipts.
