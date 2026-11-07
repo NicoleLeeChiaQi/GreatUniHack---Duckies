@@ -431,7 +431,7 @@ function copyCommitteeInvite(){
 }
 function joinCommittee(){
  const raw=document.getElementById('join-committee-code').value.trim();
- const match=raw.match(/(?:code=|invite\\/)?(PP-[A-Z0-9]{6})/i);
+ const match=raw.match(/(?:code=|invite\/)?(PP-[A-Z0-9]{6})/i);
  const code=(match?match[1]:raw).toUpperCase();
  const item=ppGetCommittees().find(x=>x.code===code);
  const box=document.getElementById('join-result');
