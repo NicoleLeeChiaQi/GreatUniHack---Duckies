@@ -37,3 +37,17 @@ The webhook event is an orchestration request. Actual WhatsApp delivery requires
 Webhook → validate `event_type` → Split Out `data.invitees` → WhatsApp Business Cloud API/Twilio send-template-message node → record provider response and delivery status.
 
 For the webhook output, the event fields may be nested under `body` depending on the n8n Webhook node configuration. Inspect the execution JSON and use the matching field path in expressions.
+
+Pitch and idea
+
+Where the idea came from
+
+The BNY challenge was to design an original financial tool for one specific user and one real problem. We chose students. I suggested a savings tool with a social side, such as a streak with a friend, so that someone else saving keeps you accountable. Bilal then proposed building on committees, the informal rotating savings circles common in South Asia, and we adapted that for students. I came up with the name Pass Pot after a long list of options.
+
+The pitch
+
+I was our main presenter. I pitched Pass Pot for eight minutes to one BNY judge, using signposting so they knew what was coming next, and Bilal led a two-minute pitch to another judge. When asked whether we would use it ourselves, we said yes: it is interest-free, and students don't have to ask their parents for money and then feel guilty about it.
+
+Feedback
+
+The BNY judge told us the idea was excellent but not that unique, because committee-style savings already exist, even if informally. Next time we would research existing solutions before settling on an idea.
